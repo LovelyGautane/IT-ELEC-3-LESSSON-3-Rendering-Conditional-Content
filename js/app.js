@@ -2,12 +2,16 @@ const app = Vue.createApp({
     data() {
         return {
             enteredTaskValue: '',
-            tasks: []
+            tasks: [],
+            myButton: true
         };
     },
     methods: {
         addTask() {
             this.tasks.push(this.enteredTaskValue);
+        },
+        toggle() {
+            this.myButton = !this.myButton
         }
     }
 });
