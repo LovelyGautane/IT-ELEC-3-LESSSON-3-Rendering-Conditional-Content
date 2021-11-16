@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue Basics</title>
+    <title>Vue Lists</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
       rel="stylesheet"
@@ -20,12 +20,11 @@
       <h2>Assignment</h2>
       <input type="text" v-model="enteredTaskValue">
       <button @click="addTask">Add Task</button>
-      <ul :class="{visible: myButton, hide: !myButton}">
-        <!--Output the list of task here-->
-        <li v-for="task in tasks"> {{ task }}</li>  
+      <p v-if="task.length === 0"> No task added yet!</p>
+      <ul v-else v-show = "tbtn === false">
+        <li v-for="task in tasks" :key="task"> {{ task }}</li>  
     </ul>
     <br>  
-    <!--Bonus: Also update the button caption-->
       <button @click="toggle">{{ myButton ? 'Hide Lists' : 'Show Lists'}}</button>
     </section>
   </body>
