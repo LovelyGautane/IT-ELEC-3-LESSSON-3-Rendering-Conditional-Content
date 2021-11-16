@@ -14,7 +14,7 @@
   h2 {
     font-size: 2rem;
     border-bottom: 4px solid #ccc;
-    color: #4eb670;
+    color: white;
     margin: 0 0 1rem 0;
 }
 
@@ -23,7 +23,7 @@
     margin: 3rem auto;
     border-radius: 10px;
     padding: 1rem;
-    background-color: #5bf8b2;
+    background-color: #b76e79;
     color: white;
     text-align: center;
     width: 90%;
@@ -38,6 +38,7 @@
     text-align: center;
     width: 90%;
     max-width: 40rem;
+    background-color: #b76e79;
   }
 
   #user-goal h2 {

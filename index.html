@@ -21,7 +21,7 @@
       <input type="text" v-model="enteredTaskValue">
       <button @click="addTask">Add Task</button>
       <ul :class="{visible: btn, hide: !btn}">
-        <li v-for="task in tasks"> {{ task }}</li>  
+        <li v-for="task in tasks"> {{ task }}</li>
     </ul>
     <br>  
 
