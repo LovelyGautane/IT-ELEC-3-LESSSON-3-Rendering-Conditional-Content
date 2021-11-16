@@ -20,12 +20,12 @@
       <h2>Assignment</h2>
       <input type="text" v-model="enteredTaskValue">
       <button @click="addTask">Add Task</button>
-      <p v-if="task.length === 0"> No task added yet!</p>
-      <ul v-else v-show = "tbtn === false">
-        <li v-for="task in tasks" :key="task"> {{ task }}</li>  
+      <ul :class="{visible: btn, hide: !btn}">
+        <li v-for="task in tasks"> {{ task }}</li>  
     </ul>
     <br>  
-      <button @click="toggle">{{ myButton ? 'Hide Lists' : 'Show Lists'}}</button>
+
+    <button @click="toggle">{{ btn ? 'Hide Lists' : 'Show Lists'}}</button>
     </section>
   </body>
 </html>

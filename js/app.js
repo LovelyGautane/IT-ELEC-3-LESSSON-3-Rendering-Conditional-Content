@@ -3,7 +3,7 @@ const app = Vue.createApp({
         return {
             enteredTaskValue: '',
             tasks: [],
-            myButton: true
+            btn: true
         };
     },
     methods: {
@@ -11,7 +11,7 @@ const app = Vue.createApp({
             this.tasks.push(this.enteredTaskValue);
         },
         toggle() {
-            this.myButton = !this.myButton
+            this.btn = !this.btn
         }
     }
 });
